@@ -2,12 +2,19 @@
 
 Nextcloud server packaged as a snap. It consists of:
 
-- Nextcloud 27
+- Nextcloud 10
 - Apache 2.4
-- PHP 8.1
+- PHP 7.4
 - MySQL 8
 - Redis 6
 
+
+Curl path needs to be manually fixed by: 
+
+   cd /usr/local/include 
+   sudo ln -s /usr/include/x86_64-linux-gnu/curl curl
+   
+in lxd container.
 
 ## How to install
 
