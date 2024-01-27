@@ -207,9 +207,11 @@ parts:
       - --enable-ctype
       - --enable-mbstring
       - --with-zip
+      - --enable-zip
       - --with-pdo-mysql
       - --with-zlib
       - --enable-gd
+      - --with-gd
       - --with-curl
       - --with-openssl
       - --with-bz2
