@@ -1,11 +1,16 @@
 # Snappy Nextcloud
 
+The customized snapcraft configuration is created for the very specific use case.  I need to enable the SQLite because I need to use nextcloud snaps to gradually upgrade from nextcloud 9 to nexctloud latest (which was 28 at the time of the attempt). Sqlite is used for the conversion of the original SQLite database used in the installation to MySQL. The SQL database used in the upgrading process was a MariaDB installation running outside from the snap. 
+
+**Therefore this nextcould snap repository is not intended to be used in regular production.**
+
 Nextcloud server packaged as a snap. It consists of:
 
 - Nextcloud 10
 - Apache 2.4
 - PHP 7.4
 - MySQL 8
+- sqlite
 - Redis 6
 
 
